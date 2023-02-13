@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myName = "Krijn";
+        let myAge = 17;
+        let myHairColor = "donker blond";
+        let leeg = "";
+        let myBirthyear = "2005";
+        //let 7_zeven = "7";
+        //let null = "";
+        //hierboven staan alle initiële variablen
+
+        //document.write("uitkomst van vraag 8.1;"+myAge);
+
+
+        document.write("uitkomst van vraag 8.1; " + myAge * 1 + "<br>");
+        document.write("uitkomst van vraag 8.2; " + myAge * myBirthyear + "<br>");
+        document.write("uitkomst van vraag 8.3; " + myBirthyear / myAge + "<br>");
+        document.write("uitkomst van vraag 8.4; " + myBirthyear / myAge + "<br>");
+        document.write("uitkomst van vraag 8.5; " + Math.round(2) * myBirthyear / myAge + "<br>");
+        document.write("uitkomst van vraag 8.6; " + 2, 5 * 2, 5 + "<br>");
+        document.write("uitkomst van vraag 8.7; " + Math.PI * 2 + "<br>");
+        document.write("uitkomst van vraag 8.8; " + 12 / 0 + "<br>");
+        document.write("uitkomst van vraag 8.9; " + myAge * 2 + "<br>");
+        document.write("uitkomst van vraag 8.0; " + myAge * 2 + 1 + "<br>");
+        document.write("uitkomst van vraag 8.11; " + myAge * (2 + 1) + "<br>");
+        document.write("uitkomst van vraag 8.12; " + myAge + 1 + "<br>");
+        document.write("uitkomst van vraag 8.13; " + leeg * 1 + "<br><br>");
+
+        document.write("tekst van vraag 10.1: " + "Ik ben een brave student <br>");
+        document.write("tekst van vraag 10.2: " + myName + "<br>");
+        //const string = new string("Krijn");
+        document.write("tekst van vraag 10.3: " + "Krijn".charAt(0) + "<br>");
+        document.write("tekst van vraag 10.4: " + "Krijn".charAt(4) + "<br>");
+        document.write("tekst van vraag 10.5: " + myName + " " + myName + "<br>");
+        document.write("tekst van vraag 10.6: " + myName + " " + myAge + "<br>");
+        document.write("tekst van vraag 10.7: " + myAge + " " + myAge + "<br>");
+        document.write("tekst van vraag 10.8: " + (myAge + myAge) + "<br><br>");
+
+        const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        myArray.push(11);
+        //myArray.reverse();
+        //myArray.extract(0);
+        //myArray.splice(5, 4);
+
+        console.log(myArray);
+
+        const myArrayLength = myArray.length;
+        myArray[4] = "Y"
+        for (let i = 0; i < myArray.length; i++) {
+            if(i != 2 && i !=0 && i !=3){
+                document.write(" item " + (i+1) + ": " + myArray[i] + "<br>");
+            }
+            if(i == 3){
+                document.write(" item " + (i+1) + ": " + "X" + "<br>");
+            };
+            if(i == 6){
+                document.write(" item " + (i+1) + ": " + myArray[i] + "<br>");
+            };
+        }; 
+
+
+        function myFunction(waarde1, waarde2) {
+          if(waarde1 == waarde2){
+            return "<br>Yes";
+          };  
+          if (waarde1 != waarde2){
+            return "<br>No".repeat(10);
+          };
+        };
+        document.write(myFunction("6", 6));
+        document.write(myFunction("dit ben ik", myName));
+        document.write(myFunction(myName, myName));
+        document.write("<br><br>");
+        const date = new Date();
+        document.write(date.toDateString() + "<br>");
+        document.write((date.getMonth()+1) + "<br>");
+        document.write(date.getDate());
+    </script>
+</body>
+
+</html>

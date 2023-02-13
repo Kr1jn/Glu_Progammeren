@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    font-family: arial;
+}
+
+.kop td {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #c9c9c9;
+    font-weight: bold;
+}
+.tabel1 {
+    background-color: aquamarine;
+}
+
+

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <Title>The fruitmaniak</Title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+      margin-left: 0px;
+    }
+
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+      margin-left: 324px;
+      margin-top: -42px;
+    }
+
+    form.example button:hover {
+      background: #0b7dda;
+    }
+
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="upperbar">Uw taal: <select name="Land">
+          <option value="Nederland">Nederland</option>
+          <option value="Belgie">Belgie</option>
+          <option value="English">English</option>
+          <option value="France">France</option>
+        </select> <a id="Mijnaccount" href="http://127.0.0.1:5500/index.html">Mijn account</a> | <a id="Afrekenen"
+          href="http://127.0.0.1:5500/winkelwagen.html">Afrekenen</a> | <a id="Inloggen"
+          href="http://127.0.0.1:5500/index.html">Inloggen</a></div>
+      </p>
+      <img id="appel" src="https://cdn.pixabay.com/photo/2020/06/05/07/58/apple-5261888_1280.png">
+      <div id="link1">
+        <div class="link"><a id="link2" href="http://127.0.0.1:5500/index.html">Home</a>
+          <a id="link3" href="http://127.0.0.1:5500/index.html">Peren</a>
+          <a id="link4" href="http://127.0.0.1:5500/index.html">Appels</a>
+          <a id="link5" href="http://127.0.0.1:5500/index.html">Sinaasappels</a>
+          <a id="link6" href="http://127.0.0.1:5500/index.html">Appelsap</a>
+          <a id="link7" href="http://127.0.0.1:5500/index.html">Perensap</a>
+          <p>
+          <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i>search</button>
+          </form>
+          </p>
+          <div id="vergelijken"><a id="ver" href="http://127.0.0.1:5500/index.html">Vergelijken</a> <a id="ver2"
+              href="http://127.0.0.1:5500/winkelwagen.html">Winkelwagen</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="leftcontent">
+        <a id="Home" href="http://127.0.0.1:5500/index.html">Home</a>
+        <ab id="Doosjes">> Appels</ab>
+        <div id="I">
+          <h3>Doosjes</h3>
+          <div id="I1"></div>
+          <h5 id="H51"><a class="A" href="http://127.0.0.1:5500/index.html">> Groot</h4></a>
+            <h5 id="H52"><a class="A" href="http://127.0.0.1:5500/index.html">> Medium</h4></a>
+              <h5 id="H53"><a class="A" href="http://127.0.0.1:5500/index.html">> Klein</h4></a>
+        </div>
+        <div id="II">
+          <h4 id="H4II"> Uw selectie verfijnen</h4>
+          <div id="I2"></div>
+          <h5 id="H54"><a class="A" href="http://127.0.0.1:5500/index.html">> Elstar</h4></a>
+            <h5 id="H55"><a class="A" href="http://127.0.0.1:5500/index.html">> Jonagold</h4></a>
+              <h5 id="H56"><a class="A" href="http://127.0.0.1:5500/index.html">> Pinklady</h4></a>
+                <h5 id="H57"><a class="A" href="http://127.0.0.1:5500/index.html">> Goudreinet</h4></a>
+        </div>
+        <div id="III">
+          <h3 id="Prijs">Prijs</h3>
+          <div id="I3"></div>
+          <div slider id="slider-distance">
+            <div>
+              <div inverse-left style="width:70%;"></div>
+              <div inverse-right style="width:70%;"></div>
+              <div range style="left:0%;right:0%;"></div>
+              <span thumb style="left:0%;"></span>
+              <span thumb style="left:100%;"></span>
+              <div sign style="left:0%;">
+                <span id="value">0</span>
+              </div>
+              <div sign style="left:100%;">
+                <span id="value">100</span>
+              </div>
+            </div>
+            <input type="range" value="0" max="100" min="0" step="1" oninput="
+                    this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                    let value = (this.value/parseInt(this.max))*100
+                    var children = this.parentNode.childNodes[1].childNodes;
+                    children[1].style.width=value+'%';
+                    children[5].style.left=value+'%';
+                    children[7].style.left=value+'%';children[11].style.left=value+'%';
+                    children[11].childNodes[1].innerHTML=this.value;" />
+
+            <input type="range" value="100" max="100" min="0" step="1" oninput="
+                    this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                    let value = (this.value/parseInt(this.max))*100
+                    var children = this.parentNode.childNodes[1].childNodes;
+                    children[3].style.width=(100-value)+'%';
+                    children[5].style.right=(100-value)+'%';
+                    children[9].style.left=value+'%';children[13].style.left=value+'%';
+                    children[13].childNodes[1].innerHTML=this.value;" />
+          </div>
+        </div>
+        <div id="IV">
+          <h3>Recent bekeken</h3>
+          <div id="I4"></div>
+          <div id="Plaatje">
+            <img id="elstarticoont" src="Img/Elstart-icoon.png">
+          </div><a id="Doosje2" href="http://127.0.0.1:5500/index.html">online elstar</a>
+          <ab id="Grijs">94,95</ab>
+          <div id="B">
+            <ab id="Blauw">79,95</ab>
+          </div>
+        </div>
+        <div id="V">
+          <h3>Nieuwsbrief</h3>
+          <div id="I5"></div>
+          <input id="telefoonnummer" type="text" placeholder="Telefoonnummer">
+          <a href="http://127.0.0.1:5500/index.html" class="menubutton">Inschrijven</a>
+        </div>
+        <div id="VI">
+          <h3>Producten vergelijken</h3>
+          <div id="I6"></div>
+          <a class="X" href="http://127.0.0.1:5500/index.html">X</a> <a id="set1"
+            href="http://127.0.0.1:5500/index.html">Online elstar</a>
+          <br>
+          <a class="X" href="http://127.0.0.1:5500/index.html">X</a> <a id="set2"
+            href="http://127.0.0.1:5500/index.html">Online elstar</a>
+          <div id="I7"></div>
+          <a href="http://127.0.0.1:5500/index.html" id="menubutton">Vergelijken</a>
+          <a id="wissen" href="http://127.0.0.1:5500/index.html">X Alles wissen</a>
+        </div>
+      </div>
+      <div id="contentright">
+        <h2 id="H2D">Appels</h2>
+        <form id="Selecterenop">
+          <label for="selectie">Sorteer op:</label>
+          <select name="Selecteren" id="selecteren">
+            <option value="volvo">Naam</option>
+            <option value="saab">Prijs</option>
+            <option value="opel">Duurzaam</option>
+            <option value="audi">Nieuwste</option>
+          </select>
+        </form>
+        <form id="Aantal">
+          <label for="Aantal">Aantal per pagina:</label>
+          <select name="Selecteren" id="aantal">
+            <option value="15">15</option>
+            <option value="12">12</option>
+            <option value="9">9</option>
+            <option value="6">6</option>
+          </select>
+        </form>
+        </select>
+        <div id="I8"></div>
+        <div class="Producten">
+          <div class="Prod">
+            <img src="Img/Jonagold.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina1.html">Jonagold Groot 1kg</a> <a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">10,95</p>
+          <p class="Pblauw">€8,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="jona2" src="Img/jonagold-apple.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina2.html">Jonagold special 9g</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€19,95</p>
+          <p class="Pblauw">€12,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="wet" src="Img/Jonagold-Wet.WEBP">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina3.html">Extra wet Jonagold</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€199,95</p>
+          <p class="Pblauw">€149,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="elstarticoon" src="Img/Elstart-icoon.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina4.html">Online Elstar</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€94,95</p>
+          <p class="Pblauw">€79,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img src="Img/appels-elstar.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina5.html">Elstar groot 2kg</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">29,95</p>
+          <p class="Pblauw">€24,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="elstar" src="Img/Gala-Venus-fengal.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina6.html">4 Super elstars</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€18,95</p>
+          <p class="Pblauw">€14,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="Pink" src="Img/Pomme-pinklady.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina7.html">1 Super pinklady</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€29,95</p>
+          <p class="Pblauw">€20,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="epic" src="Img/apple-favicon-sm2.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina8.html">Drawing of pinklady</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€79,95</p>
+          <p class="Pblauw">€69,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="Stack" src="Img/Stack.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina9.html">1kg pinklady</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€19,95</p>
+          <p class="Pblauw">€20,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="goudreinet" src="Img/goudreinet_doodle.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina10.html">Goudreinet doodle</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€29,95</p>
+          <p class="Pblauw">€14,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="schijf" src="Img/appel-schijf.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina11.html">Sappige schijf</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€39,95</p>
+          <p class="Pblauw">€23,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="icon" src="Img/apple-icon-4017545_1280.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina12.html">Mega doodle</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€19,95</p>
+          <p class="Pblauw">€20,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="delcroft" src="Img/Fruitbedrijf-Van-den-Berge-Delcorf-2.JPEG">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina13.html">100kg delcroft</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€129,95</p>
+          <p class="Pblauw">€99,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="appelkwart" src="Img/Apples_cut_web.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina14.html">1 4/3 delcroft</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€7,95</p>
+          <p class="Pblauw">€5,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="icon" src="Img/opt.1250w.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina15.html">Delcroft 10 appels</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€15,95</p>
+          <p class="Pblauw">€9,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="granaatappel" src="Img/granaatappel.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina16.html">1 granaatappel</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">4,95</p>
+          <p class="Pblauw">2,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="granaat" src="Img/fruit-9.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina17.html">online granaatappel </a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€39,95</p>
+          <p class="Pblauw">€29,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="gran3" src="img/appel-jan.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina18.html">Appel-jan</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€109,95</p>
+          <p class="Pblauw">€99,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="granny" src="Img/thumb_granny-smith-appel.png">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina19.html">1 Granny smith</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€9,95</p>
+          <p class="Pblauw">€4,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="Grannys" src="Img/image_processing20200510-10309-1qg09cs.PNG">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina20.html">online granny smith</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€19,95</p>
+          <p class="Pblauw">€25,95</p>
+        </div>
+        <div class="Producten">
+          <div class="Prod">
+            <img id="Grans" src="Img/0002895_Granny_Smith_Appels_4-Pack_Los_WC_sRGB.PNG">
+          </div>
+          <a class="Prodnaam" href="http://127.0.0.1:5500/detailpagina21.html">4 Granny smiths</a><a
+            href="http://127.0.0.1:5500/winkelwagen.html"><img class="Winkelwagen" src="Img/Winkelwahen.png"></a>
+          <p class="Pgrijs">€14,95</p>
+          <p class="Pblauw">€12,95</p>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="links">
+          <h2>Veilig Betalen</h2>
+          <p>Betalen kan met
+            <br>
+            deze methodes
+          </p>
+          <a href="http://127.0.0.1:5500/index.html"><img id="ideaal" src="Img/online-betalen.WEBP"></a>
+        </div>
+        <div id="mid1">
+          <h2>Leveringskosten</h2>
+          <p>Transport tarieven</p>
+        </div>
+        <div id="mid2">
+          <h2>Klantenservice</h2>
+          <ul>
+            <li>Wachtwoord vergeten</li>
+            <li>Veilige Betaling</li>
+            <li>Levering</li>
+            <li>Annuleren, Retourneren en Ruilen</li>
+          </ul>
+          </p>
+        </div>
+        <div id="rechts">
+          <h2>Over ons</h2>
+          <ul>
+            <li>Over ons</li>
+            <li>Contactinformatie</li>
+            <li>Privacy beleid</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workshop 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>velden voor een HTML-formulier</h1>
+            <form>
+                <fieldset>
+                <legend><h2>tekstvelden</h2></legend>
+                <p><label for="voornaam">voornaam:</label> <input id="voornaam" type="text" name="voornaam"/></p>
+                <p><label for="Achternaam">achternaam:</label> <input type="text" name="Achternaam"/></p>
+                <p><label for="password">Wachtwoord:</label><input type="password" name="pwd"/>&nbsp;</p>
+                </fieldset>
+                <fieldset>
+                <legend><h2>Radio Buttons</h2></legend>
+                <p><label for="man">Man</label><input type="radio" name="gesclacht" value="man"/></p>
+                <p><label for="Vrouw">Vrouw</label><input type="radio" name="geslacht"value="vrouw"/></p>
+                </fieldset>
+                <fieldset>
+                <legend><h2>Chekcbox</h2></legend>
+                <p><label for="Ik heb een fiets"></label><input type="checkbox" name="vehicle" value="Fiets"/>Ik heb een fiets</p>
+                <p><label for="Ik heb een auto"></label><input type="checkbox" name="vehicle" value="auto"/>Ik heb een auto</p>
+                </fieldset>
+                <fieldset>
+                <legend><h2>Dropdownlist</h2></legend>
+                <p><select name="Balletdanseressen">
+                    <option value="Martha Graham">Martha Graham </option>
+                    <option value="Carlotta Grisi">Carlotta Grissi</option>
+                    <option value="Agrippina Vaganova" selected="selected">Agrippina Vaganova</option>
+                    <option value="Natalie Portman">Natalie Portman</option>
+                </select></p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Textarea</h2></legend>
+                    <p><textarea rows="7" cols="25" name="opmerkingen"></textarea></p>
+                    </fieldset>
+                    <fieldset>
+                    <legend><h2>Submit knop</h2></legend>
+                    <p><input type="submit" value="verzenden"></p>
+                    </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

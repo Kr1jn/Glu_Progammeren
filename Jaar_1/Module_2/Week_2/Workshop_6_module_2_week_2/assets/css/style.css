@@ -1,0 +1,114 @@
+body {
+    background-color: green;
+}
+
+.Kaartspel1 {
+   
+}
+#kaart {
+    border-radius: 9px;
+    border: 1px solid #000;
+    max-width: 170px;
+    max-height: 300px;
+    height: 250px;
+    background-color: #fff;
+}
+
+#hart1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    position: absolute;
+}
+
+#plaatje {
+    margin-top: -95px;
+    margin-left: -69px;
+    max-width: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#hart2 {
+    margin-top: 205px;
+    margin-left: 130px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.Kaartspel2 {
+    margin-left: 170px;
+}
+#klaver1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    position: absolute;
+}
+
+#plaatje {
+    margin-top: -95px;
+    margin-left: -69px;
+    max-width: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#klaver2 {
+    margin-top: 205px;
+    margin-left: 130px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.Kaartspel3 {
+    margin-left: 340px;
+}
+
+#ruit1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    position: absolute;
+}
+
+#plaatje {
+    margin-top: -95px;
+    margin-left: -69px;
+    max-width: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#ruit2 {
+    margin-top: 205px;
+    margin-left: 130px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.Kaartspel4 {
+    margin-left: 510px;
+}
+
+#schoppen1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    position: absolute;
+}
+
+#plaatje {
+    margin-top: -95px;
+    margin-left: -69px;
+    max-width: 300px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+#schoppen2 {
+    margin-top: 205px;
+    margin-left: 130px;
+    position: absolute;
+    transform: rotate(180deg);
+}

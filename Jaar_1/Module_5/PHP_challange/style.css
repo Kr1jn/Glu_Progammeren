@@ -1,0 +1,47 @@
+.Happy2023 {
+    color: red;
+    font-size: 60px;
+    margin-left: 850px;
+}
+
+.rond {
+    border: 3px solid black;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-color: blue;
+    float: left;
+    margin-left: 890px;
+}
+
+.vierkant {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border: 3px dotted red;
+    border-color: red;
+    float: left;
+}
+
+.yes {
+    height: 110px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 930px;
+}
+
+.streep {
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.fromulier {
+    border: 1px solid grey;
+    height: 150px;
+    width: 50%;
+    margin-left: 500px;
+}

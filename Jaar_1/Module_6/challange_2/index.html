@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opdracht 2 - myFunctionX()</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #333333;
+        background-color: #cccccc;
+      }
+      .style1 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #uitkomst {
+        background-color: #ffffff;
+        border: 2px solid #000000;
+      }
+    </style>
+    <script>
+      function myFunction1() {
+        //
+        //pas de koptekst van de pagina aan
+        //
+        //schrijf hier jouw code:
+        const koptext = document.getElementsByClassName("style1");
+        koptext[0].innerHTML = "Koptext";
+      }
+      function myFunction2() {
+        //
+        //pas de tekst die IN de div tag staat aan
+        //
+        //schrijf hier jouw code:
+        document.getElementById("uitkomst").innerHTML = "Ghellooooo";
+      }
+      //Opdracht 2 - Programmeren 4: JavaScript 1
+      function myFunction3() {
+        //
+        //voeg tekst TOE aan de div tag (dus laat de bestaande tekst staan)
+        //
+        //schrijf hier jouw code:
+        var uitkomst = document.getElementById("uitkomst");
+        uitkomst.innerHTML += "Even more Ghelloooooo!!";
+      }
+      function myFunction4() {
+        //
+        //plaats via een prompt de door de gebruiker ingevoerde tekst IN de div tag
+        //
+        //schrijf hier jouw code:
+        let name = prompt("Enter the name", "Jan van Os");
+        if (name != null) {
+          document.getElementById("uitkomst").innerHTML =
+            "Hello " + name + "! How are you today?" + "<br>";
+        }
+      }
+      function myFunction5() {
+        //
+        //hoeveel <a> tags zijn er op de pagina aanwezig? zet de uitkomst IN de div tag...
+        //
+        //schrijf hier jouw code:
+        let atags = document.getElementsByTagName("a");
+        document.getElementById("uitkomst").innerHTML = atags.length;
+      }
+      function myFunction6() {
+        //
+        //pas de tekst van de derde link in het document aan
+        //
+        //schrijf hier jouw code:
+        const link3 = document.getElementsByTagName("a");
+        link3[2].innerHTML = "hehe this is different now :b";
+      }
+      function myFunction7() {
+        //
+        //pas de background-color van de div tag aan
+        //extra: als de kleur wit is wordt die rood, en als die rood is wordt die weer wit
+        //
+        //schrijf hier jouw code:
+        //
+        var color = document.getElementById("uitkomst").style.backgroundColor;
+        if (color == "red"){
+          document.getElementById("uitkomst").style.backgroundColor = "white";
+          console.log("white!");
+        }else{
+          document.getElementById("uitkomst").style.backgroundColor = "red";
+          console.log("red!");
+        };
+      }
+      function myFunction8() {
+        //
+        //extra: voeg een nieuw element <div> tag toe aan je pagina en zet daarin een tekst
+        //naar keuze
+        //
+        const div = document.createElement("div");
+        const prediv = document.getElementById("uitkomst");
+        prediv.after(div);
+        div.innerHTML = "hello!";
+      }
+    </script>
+  </head>
+  <body>
+    <span class="style1">Hier staat de koptekst van de pagina.</span><br />
+    <br />
+    Dit is de pagina waarmee je de challenge gaat maken. <br />
+    Zoals je ziet is deze pagina niet veel bijzonders.<br />
+    Gewoon een pagina met wat tekst er in.<br />
+    <br />
+    Challenge 2 - Module 6 - JavaScript 2 Hier staat nog een regel.<br />
+    <br />
+    Met deze links kun je straks de verschillende functies van jouw JavaScript
+    uitvoeren:
+    <br />
+    <br />
+    <a href="#" onclick="myFunction1()">link 1</a>
+    <a href="#" onclick="myFunction2()">link 2</a>
+    <a href="#" onclick="myFunction3()">link 3</a>
+    <a href="#" onclick="myFunction4()">link 4</a>
+    <a href="#" onclick="myFunction5()">link 5</a>
+    <a href="#" onclick="myFunction6()">link 6</a>
+    <a href="#" onclick="myFunction7()">link 7</a>
+    <a href="#" onclick="myFunction8()">link 8</a>
+    <br /><br />
+    <div id="uitkomst">
+      hier kun je via de javaScript functies die uitgevoerd worden via de
+      knoppen straks een andere tekst neer zetten..
+    </div>
+    <br />
+    link 1 : pas de koptekst van de pagina aan<br />
+    link 2 : pas de tekst die IN de div tag (met het id 'uitkomst') staat aan<br />
+    link 3 : voeg tekst toe aan deze div tag (dus laat de bestaande tekst
+    staan)<br />
+    link 4 : plaats via een 'prompt' de door de gebruiker ingevoerde tekst IN de
+    div tag<br />
+    link 5 : hoeveel &lta&gt tags zijn er op de pagina aanwezig? zet de uitkomst
+    IN de div tag...<br />
+    link 6 : pas de tekst van de derde link in het document aan<br />
+    link 7 : pas de background-color van de div tag aan, als de kleur wit is
+    wordt die rood, en als die rood is wordt die weer wit<br />
+    link 8 : voeg een nieuw &ltdiv&gt element toe aan je pagina en zet daarin
+    een tekst naar keuze<br />
+  </body>
+</html>
