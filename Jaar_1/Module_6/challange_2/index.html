@@ -52,8 +52,8 @@
         if (name != null) {
           document.getElementById("uitkomst").innerHTML =
             "Hello " + name + "! How are you today?" + "<br>";
-        }
-      }
+        };
+      };
       function myFunction5() {
         //
         //hoeveel <a> tags zijn er op de pagina aanwezig? zet de uitkomst IN de div tag...
@@ -61,7 +61,7 @@
         //schrijf hier jouw code:
         let atags = document.getElementsByTagName("a");
         document.getElementById("uitkomst").innerHTML = atags.length;
-      }
+      };
       function myFunction6() {
         //
         //pas de tekst van de derde link in het document aan
@@ -69,7 +69,7 @@
         //schrijf hier jouw code:
         const link3 = document.getElementsByTagName("a");
         link3[2].innerHTML = "hehe this is different now :b";
-      }
+      };
       function myFunction7() {
         //
         //pas de background-color van de div tag aan
@@ -85,7 +85,7 @@
           document.getElementById("uitkomst").style.backgroundColor = "red";
           console.log("red!");
         };
-      }
+      };
       function myFunction8() {
         //
         //extra: voeg een nieuw element <div> tag toe aan je pagina en zet daarin een tekst
@@ -95,7 +95,7 @@
         const prediv = document.getElementById("uitkomst");
         prediv.after(div);
         div.innerHTML = "hello!";
-      }
+      };
     </script>
   </head>
   <body>
