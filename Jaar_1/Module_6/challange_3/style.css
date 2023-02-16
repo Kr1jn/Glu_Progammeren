@@ -1,0 +1,41 @@
+body{
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  background-image: url("Background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#cookietxt {
+  color: #fff;
+}
+
+button{
+  text-align: center;
+  margin: 0;
+  background: rgb(93, 93, 93);
+  color: rgb(255, 255, 255);
+  border: 5px solid black;
+  border-radius: 5px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+button:hover{
+  background: #4D4D4D;
+  cursor: pointer;
+}
+
+#cookieimg:hover {
+  cursor: pointer;
+}
+
+#upgradebutton {
+  color: #ffffff;
+}
+
+#upgradecounter {
+  color: #ffffff;
+}

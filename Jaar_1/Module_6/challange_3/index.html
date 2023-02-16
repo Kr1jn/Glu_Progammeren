@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Challenge 3</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--De text boven het plaatje met de hoeveelheid koekjes die je hebt-->
+    <h1 id="cookietxt">0 Koekjes</h1>
+    <!--Het plaatje en de "addcookie" onclick command -->
+    <img src="Cookie.png" id="cookieimg" height="250px" onclick="addcookie()" />
+    <br />
+    <!--De upgrade button en de text die erin staat-->
+    <h2 id="upgradebutton">Upgraden kost 50 koekjes</h2>
+    <button onclick="upgradeClicks()">Upgrade</button>
+    <h2 id="upgradecounter">0</h2>
+    <button onClick="window.location.reload();">Reset</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
