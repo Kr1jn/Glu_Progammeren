@@ -1,0 +1,38 @@
+body {
+	background-color: pink;
+}
+
+h1 {
+	font-size: 85px;
+	max-width: 600px;
+}
+
+.description {
+	max-width: 600px;
+	margin-top: -1270px;
+}
+
+p {
+	font-size: 17px;
+}
+.iets {
+	margin-top: 200px;
+}
+
+.photothing {
+	margin-top: -150px;
+}
+
+img {
+	margin-left: 750px;
+	margin-top: -250px;
+}
+
+.ingredients {
+	max-width: 550px;
+	margin-top: -00px;
+}
+
+.instructions {
+	max-width: 600px;
+}
