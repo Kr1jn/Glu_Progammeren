@@ -3,10 +3,23 @@
     height: 100vh;
 }
 
-.vakje {
+.square {
     width: 32px;
     height: 32px;
     display: inline-block;
     border: 1px solid #000000;
     vertical-align: top;
+}
+
+.square {
+    background-color: rgb(100, 100, 255);
+}
+
+
+#square_173, #square_174, #square_175, #square_216, #square_217, #square_218, #square_259, #square_260, #square_261, #square_301, #square_302, #square_303, #square_304, #square_342, #square_343, #square_344, #square_345, #square_346, #square_347, #square_380, #square_381, #square_382, #square_383, #square_384, #square_385, #square_386, #square_387, #square_388, #square_389, #square_390, #square_429, #square_428, #square_427, #square_426, #square_431, #square_432, #square_430, #square_473, #square_474, #square_475, #square_476, #square_477, #square_478, #square_479, #square_480, #square_523, #square_524, #square_525 {
+    background-color: red;
+}
+
+#square_1, #square_2, #square_3, #square_4, #square_45, #square_46, #square_47, #square_89, #square_90, #square_133, #square_382 {
+    background-color: rgb(239, 243, 29);
 }
