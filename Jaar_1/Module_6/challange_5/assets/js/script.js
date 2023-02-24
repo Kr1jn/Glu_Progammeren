@@ -149,7 +149,7 @@ function update () {
         direction += grip;
     }
     context.font = `20px Verdana`;
-    context.fillText(`x: ${pos.x}, y: ${pos.y}`,100,110);
+    context.fillText(`x: ` + Math.round(pos.x) + ` y: ` + Math.round(pos.y),100,110);
     context.font = `20px Verdana`;
     context.fillText(`score: ${score}`,950,50);
 
